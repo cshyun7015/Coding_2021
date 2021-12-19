@@ -1,0 +1,17 @@
+{
+  "version": 0.0,
+  "Resources": [
+    {
+      "TargetService": {
+        "Type": "AWS::ECS::Service",
+        "Properties": {
+          "TaskDefinition": "arn:aws:ecs:ap-northeast-2:222179995953:task-definition/IB07441-Family:13",
+          "LoadBalancerInfo": {
+            "ContainerName": "ib07441-app",
+            "ContainerPort": "80"
+          }
+        }
+      }
+    }
+  ]
+}
